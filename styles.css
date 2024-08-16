@@ -1,0 +1,131 @@
+
+@media (orientation: landscape){
+#spawnRoom {
+    width:100vw;
+    height:100vh;
+    background-color:turquoise;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+#city1 {
+    width:100vw;
+    height:100vh;
+    background-color:rgb(53, 54, 53);
+    display:none;
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    left:0;
+
+}
+
+.building1 {
+    width:8vw;
+    height:20vh;
+    position:absolute;
+    background-color:#555555;
+}
+
+.building2 {
+    width:6vw;
+    height:30vh;
+    position:absolute;
+    background-color:#444444;
+}
+
+#d0 {
+    top:80%;
+    left:20%;
+}
+
+#d1 {
+    top:60%;
+    left:25%;
+}
+
+#d2 {
+    top:70%;
+    left:50%;
+}
+
+.player {
+    background-color: #ff0000;
+    width:4vw;
+    height:15vh;
+    background-position:0 0;
+    position:absolute;
+
+}
+
+#computerPopup {
+    display:none;
+}
+
+#controls {
+    width:18vw;
+    height:25vh;
+    position:fixed;
+    background-color:#ffffff00;
+    border-radius:15px;
+    z-index:20;
+    bottom:0;
+    left:5%;
+    opacity:95%
+}
+
+.moveButton {
+    background-size:100% 100%;
+    width:5vw;
+    height:10vh;
+    background-color:#333;
+    position:absolute;
+    border-color:#0000ff;
+    will-change:transform;
+    transition: transform 0.3s ease;
+
+}
+
+.moveButton:active {
+    transform:translateY(5px);
+}
+
+#left {
+    border-radius: 15px 0 0 15px;
+    left:5%;
+    top:25%;
+}
+
+#right {
+    border-radius: 0 15px 15px 0;
+    right:5%;
+    top:25%;
+}
+
+#jump {
+    border-radius:15px 15px 0 0;
+    left:50%;
+    transform:translateX(-50%);
+    top:5%;
+}
+
+#down {
+    border-radius:0 0 15px 15px;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:5%;
+}
+
+}
+@media (any-pointer: fine){
+    body {
+        background-color:#333;
+    }
+    
+    #computerPopup {
+        font-size:50px;
+        color:#ffffff;
+    }
+}
